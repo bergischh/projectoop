@@ -1,10 +1,10 @@
 <?php
 class Database {
-    var $host = "localhost";
-    var $username = "root";
-    var $password = "";
-    var $database = "db_oop";
-    var $koneksi = "";
+    private $host = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "db_oop";
+    private $koneksi = "";
 
     public function __construct(){
         $this->koneksi =  mysqli_connect($this->host, $this->username, $this->password, $this->database);
